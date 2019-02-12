@@ -1,0 +1,55 @@
+baseURL = "https://getnergroup.com"
+languageCode = "en-us"
+title = "Welcome to Getner Group"
+theme = "vanilla-bootstrap-hugo-theme-master"
+googleAnalytics = "UA-104990318-1"
+
+# Uncomment below to enable syntax highlighting
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+# See https://xyproto.github.io/splash/docs/all.html for more styles
+pygmentsStyle = "pygments"
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
+
+# See https://feathericons.com/
+# The value of pre is the icon name
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Blog"
+    pre = "edit"
+    url = "/post/"
+    weight = 2
+  [[menu.nav]]
+    name = "Tags"
+    pre = "tag"
+    url = "/tags/"
+    weight = 3
+  [[menu.nav]]
+    name = "About"
+    pre = "smile"
+    url = "/about/"
+    weight = 4
+  [[menu.nav]]
+    name = "RSS"
+    pre = "rss"
+    url = "/index.xml"
+    weight = 5
+
+[params]
+  includeBootstrapJs = false
+  showActiveNav = true
+  containerMaxWidth = "700px"
+  dateFormat = "Jan 2, 2006"
+  homeText = "Purveyors of digital marketing excellence. We also can play a relatively mean game of [chess](https://lichess.org/@/foodstamp)."
+  footerText = "Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)"
+  hideFooter = false
